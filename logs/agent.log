@@ -1,0 +1,300 @@
+2026-09-04 11:22:04,401 | INFO | SQL demandé : SELECT nom, secteur FROM entreprises ORDER BY id
+2026-09-04 11:22:04,401 | INFO | SQL OK : 5 ligne(s) renvoyée(s)
+2026-09-04 11:22:04,402 | INFO | SQL demandé : SELECT e.nom, f.annee, f.chiffre_affaires FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom = 'TechNova Solutions' ORDER BY f.annee
+2026-09-04 11:22:04,402 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:22:04,402 | INFO | SQL demandé : DROP TABLE finances
+2026-09-04 11:22:04,402 | WARNING | SQL refusé (non-SELECT) : DROP TABLE finances
+2026-09-04 11:22:04,403 | INFO | SQL demandé : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:22:04,403 | WARNING | SQL refusé (non-SELECT) : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:22:04,403 | INFO | SQL demandé : SELECT * FROM table_inexistante
+2026-09-04 11:22:04,403 | ERROR | SQL en échec : SELECT * FROM table_inexistante LIMIT 50 | no such table: table_inexistante
+2026-09-04 11:22:04,403 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:22:04,403 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:22:04,404 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:22:04,404 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:22:04,404 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:22:04,405 | INFO | Calcul marge nette : CA=105.4, RN=4.8
+2026-09-04 11:22:04,405 | INFO | Calcul marge nette : CA=0.0, RN=5.0
+2026-09-04 11:22:04,405 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:22:04,405 | INFO | Calcul variation : 245.8 -> 168.9
+2026-09-04 11:22:04,406 | INFO | Recherche web : TechNova Solutions entreprise
+2026-09-04 11:22:04,922 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20entreprise 200
+2026-09-04 11:22:05,226 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+entreprise&limit=1 200
+2026-09-04 11:22:05,416 | INFO | response: https://search.yahoo.com/search;_ylt=21q724S6zZJHO1WvL3ZPFqH6;_ylu=cmOh_ECekTSJiZpjcMvyisFOnvHTWPEJcIYLjXrG8p1QL-E?p=TechNova+Solutions+entreprise 200
+2026-09-04 11:22:11,780 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+entreprise) > operation timed out'))
+2026-09-04 11:22:12,030 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+entreprise&source=web 429
+2026-09-04 11:22:12,459 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 11:22:12,728 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 11:22:12,838 | INFO | response: https://www.google.com/wml/search?q=TechNova+Solutions+entreprise&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-09-04 11:22:13,087 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:22:13,088 | INFO | Graphe CA demandé pour : BioSanté
+2026-09-04 11:22:14,485 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/emoji/NotoColorEmoji.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,488 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,493 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/english/Tinos-Bold.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,494 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/chinese/NotoSansSC[wght].ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,500 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/english/Tinos-Italic.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,501 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/english/Tinos-Regular.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,504 | INFO | Failed to extract font properties from /usr/share/fonts/truetype/english/Tinos-BoldItalic.ttf: In FT2Font: Can not load face (unknown file format; error code 0x2)
+2026-09-04 11:22:14,525 | INFO | generated new fontManager
+2026-09-04 11:22:14,989 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:22:14,990 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:22:15,113 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:22:15,114 | INFO | Graphe CA demandé pour : EntrepriseFantome
+2026-09-04 11:24:08,742 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 11:24:08,743 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:24:08,746 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:24:08,749 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:24:08,751 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 11:24:09,778 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:24:09,779 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:24:09,897 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:24:09,901 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 11:24:10,272 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 11:24:10,415 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 200
+2026-09-04 11:24:15,417 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+actualit%C3%A9) > operation timed out'))
+2026-09-04 11:24:15,905 | INFO | response: https://search.yahoo.com/search;_ylt=vcoo3yOVbUUemTa19VLrV2Aq;_ylu=WSTDwqMAKsfNne9mE1PaHLWRbeW-KY6NaQ4zsOAlO9V1C1k?p=TechNova+Solutions+actualit%C3%A9 200
+2026-09-04 11:24:16,229 | INFO | response: https://html.duckduckgo.com/html/ 200
+2026-09-04 11:24:16,231 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:24:16,248 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:24:16,249 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:25:24,757 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 11:25:24,757 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:25:24,760 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:25:24,763 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:25:24,766 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 11:25:25,816 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:25:25,816 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:25:25,935 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:25:25,940 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 11:25:26,134 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 429
+2026-09-04 11:25:26,333 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 11:25:26,459 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 11:25:27,133 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 11:25:27,377 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 11:25:27,628 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+actualit%C3%A9&source=web 429
+2026-09-04 11:25:32,641 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+actualit%C3%A9) > operation timed out'))
+2026-09-04 11:25:32,757 | INFO | response: https://www.google.com/wml/search?q=TechNova+Solutions+actualit%C3%A9&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-09-04 11:25:32,859 | INFO | response: https://search.yahoo.com/search;_ylt=_kDWCem76sa2qkg68dMYPbw9;_ylu=Gd9-Qmp4tzbRcKAXUL_2FtQNd67iNWbqhHj3UJMxxqpoH4A?p=TechNova+Solutions+actualit%C3%A9 200
+2026-09-04 11:25:33,622 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:25:33,639 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:25:33,640 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:25:33,642 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:25:33,643 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:25:33,645 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:25:33,646 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:27:43,913 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 11:27:43,914 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:27:43,917 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:27:43,919 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:27:43,922 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 11:27:44,937 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:27:44,938 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:27:45,056 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:27:45,060 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 11:27:45,244 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 200
+2026-09-04 11:27:45,847 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 11:27:46,523 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 11:27:46,833 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 11:27:51,835 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+actualit%C3%A9) > operation timed out'))
+2026-09-04 11:27:52,086 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+actualit%C3%A9&source=web 429
+2026-09-04 11:27:52,429 | INFO | response: https://html.duckduckgo.com/html/ 200
+2026-09-04 11:27:52,431 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:27:52,450 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:27:52,451 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:27:52,454 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:27:52,454 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:27:52,457 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:27:52,457 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:27:54,041 | INFO | SQL demandé : SELECT nom, secteur FROM entreprises ORDER BY id
+2026-09-04 11:27:54,041 | INFO | SQL OK : 5 ligne(s) renvoyée(s)
+2026-09-04 11:27:54,041 | INFO | SQL demandé : SELECT e.nom, f.annee, f.chiffre_affaires FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom = 'TechNova Solutions' ORDER BY f.annee
+2026-09-04 11:27:54,042 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:27:54,042 | INFO | SQL demandé : DROP TABLE finances
+2026-09-04 11:27:54,042 | WARNING | SQL refusé (non-SELECT) : DROP TABLE finances
+2026-09-04 11:27:54,042 | INFO | SQL demandé : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:27:54,042 | WARNING | SQL refusé (non-SELECT) : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:27:54,043 | INFO | SQL demandé : SELECT * FROM table_inexistante
+2026-09-04 11:27:54,043 | ERROR | SQL en échec : SELECT * FROM table_inexistante LIMIT 50 | no such table: table_inexistante
+2026-09-04 11:27:54,043 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:27:54,043 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:27:54,043 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:27:54,044 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:27:54,044 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:27:54,044 | INFO | Calcul marge nette : CA=105.4, RN=4.8
+2026-09-04 11:27:54,045 | INFO | Calcul marge nette : CA=0.0, RN=5.0
+2026-09-04 11:27:54,045 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:27:54,045 | INFO | Calcul variation : 245.8 -> 168.9
+2026-09-04 11:27:54,045 | INFO | Recherche web : TechNova Solutions entreprise
+2026-09-04 11:27:54,234 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20entreprise 429
+2026-09-04 11:27:54,390 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+entreprise&limit=1 200
+2026-09-04 11:27:59,391 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+entreprise) > operation timed out'))
+2026-09-04 11:27:59,532 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 11:27:59,641 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+entreprise&source=web 429
+2026-09-04 11:28:00,330 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 11:28:00,609 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 11:28:00,775 | INFO | response: https://search.yahoo.com/search;_ylt=Wb0n5ZbimD-ioUib-ix1E3df;_ylu=XqKcJ-vAPvwJujn85w2F55fE6Opno_3OnSFbTnAMO11N2ok?p=TechNova+Solutions+entreprise 200
+2026-09-04 11:28:01,676 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:28:01,677 | INFO | Graphe CA demandé pour : BioSanté
+2026-09-04 11:28:02,773 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:28:02,773 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:28:02,897 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:28:02,898 | INFO | Graphe CA demandé pour : EntrepriseFantome
+2026-09-04 11:40:46,527 | INFO | SQL demandé : SELECT nom, secteur FROM entreprises ORDER BY id
+2026-09-04 11:40:46,527 | INFO | SQL OK : 5 ligne(s) renvoyée(s)
+2026-09-04 11:40:46,528 | INFO | SQL demandé : SELECT e.nom, f.annee, f.chiffre_affaires FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom = 'TechNova Solutions' ORDER BY f.annee
+2026-09-04 11:40:46,528 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:40:46,529 | INFO | SQL demandé : DROP TABLE finances
+2026-09-04 11:40:46,529 | WARNING | SQL refusé (non-SELECT) : DROP TABLE finances
+2026-09-04 11:40:46,529 | INFO | SQL demandé : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:40:46,529 | WARNING | SQL refusé (non-SELECT) : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:40:46,529 | INFO | SQL demandé : SELECT * FROM table_inexistante
+2026-09-04 11:40:46,529 | ERROR | SQL en échec : SELECT * FROM table_inexistante LIMIT 50 | no such table: table_inexistante
+2026-09-04 11:40:46,530 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:40:46,530 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:40:46,530 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:40:46,530 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:40:46,531 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:40:46,531 | INFO | Calcul marge nette : CA=105.4, RN=4.8
+2026-09-04 11:40:46,531 | INFO | Calcul marge nette : CA=0.0, RN=5.0
+2026-09-04 11:40:46,531 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:40:46,532 | INFO | Calcul variation : 245.8 -> 168.9
+2026-09-04 11:40:46,532 | INFO | Recherche web : TechNova Solutions entreprise
+2026-09-04 11:40:46,881 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+entreprise&limit=1 200
+2026-09-04 11:40:47,069 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20entreprise 200
+2026-09-04 11:40:47,800 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 11:40:48,134 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 11:40:48,265 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 11:40:48,525 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+entreprise&source=web 429
+2026-09-04 11:40:48,676 | INFO | response: https://www.google.com/wml/search?q=TechNova+Solutions+entreprise&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-09-04 11:40:48,918 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:40:48,919 | INFO | Graphe CA demandé pour : BioSanté
+2026-09-04 11:40:50,119 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:40:50,119 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:40:50,238 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:40:50,239 | INFO | Graphe CA demandé pour : EntrepriseFantome
+2026-09-04 11:40:52,828 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 11:40:52,829 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:40:52,832 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:40:52,835 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:40:52,838 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 11:40:53,883 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:40:53,883 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:40:54,000 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:40:54,004 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 11:40:54,201 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 429
+2026-09-04 11:40:54,349 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 11:40:54,511 | INFO | response: https://search.yahoo.com/search;_ylt=cXLIvIWxHImMR38vkMCAr0-I;_ylu=WIhlTB0LlnSmBEDAA13lXlHfSI0zWmHyoD7dsuo8GJ4xVEM?p=TechNova+Solutions+actualit%C3%A9 200
+2026-09-04 11:40:55,028 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:40:55,044 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:40:55,044 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:40:55,047 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:40:55,047 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:40:55,050 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:40:55,051 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:41:02,972 | INFO | SQL demandé : SELECT nom, secteur FROM entreprises ORDER BY id
+2026-09-04 11:41:02,972 | INFO | SQL OK : 5 ligne(s) renvoyée(s)
+2026-09-04 11:41:02,973 | INFO | SQL demandé : SELECT e.nom, f.annee, f.chiffre_affaires FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom = 'TechNova Solutions' ORDER BY f.annee
+2026-09-04 11:41:02,973 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:41:02,973 | INFO | SQL demandé : DROP TABLE finances
+2026-09-04 11:41:02,973 | WARNING | SQL refusé (non-SELECT) : DROP TABLE finances
+2026-09-04 11:41:02,974 | INFO | SQL demandé : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:41:02,974 | WARNING | SQL refusé (non-SELECT) : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 11:41:02,974 | INFO | SQL demandé : SELECT * FROM table_inexistante
+2026-09-04 11:41:02,974 | ERROR | SQL en échec : SELECT * FROM table_inexistante LIMIT 50 | no such table: table_inexistante
+2026-09-04 11:41:02,974 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:41:02,975 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:41:02,975 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 11:41:02,975 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 11:41:02,975 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:41:02,976 | INFO | Calcul marge nette : CA=105.4, RN=4.8
+2026-09-04 11:41:02,976 | INFO | Calcul marge nette : CA=0.0, RN=5.0
+2026-09-04 11:41:02,976 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:41:02,976 | INFO | Calcul variation : 245.8 -> 168.9
+2026-09-04 11:41:02,977 | INFO | Recherche web : TechNova Solutions entreprise
+2026-09-04 11:41:03,168 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20entreprise 200
+2026-09-04 11:41:03,764 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+entreprise&limit=1 200
+2026-09-04 11:41:03,875 | INFO | response: https://www.google.com/wml/search?q=TechNova+Solutions+entreprise&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-09-04 11:41:04,196 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:41:04,197 | INFO | Graphe CA demandé pour : BioSanté
+2026-09-04 11:41:05,234 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:41:05,234 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:41:05,354 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:41:05,355 | INFO | Graphe CA demandé pour : EntrepriseFantome
+2026-09-04 11:41:07,753 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 11:41:07,754 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 11:41:07,756 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 11:41:07,759 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 11:41:07,761 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 11:41:08,766 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:41:08,766 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 11:41:08,881 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 11:41:08,885 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 11:41:09,084 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 429
+2026-09-04 11:41:09,228 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 11:41:09,372 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 11:41:09,498 | INFO | response: https://www.google.com/wml/search?q=TechNova+Solutions+actualit%C3%A9&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-09-04 11:41:09,673 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 11:41:09,688 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:41:09,688 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:41:09,690 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:41:09,691 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 11:41:09,693 | INFO | SQL demandé : SELECT 1
+2026-09-04 11:41:09,693 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 12:24:32,037 | INFO | SQL demandé : SELECT nom, secteur FROM entreprises ORDER BY id
+2026-09-04 12:24:32,038 | INFO | SQL OK : 5 ligne(s) renvoyée(s)
+2026-09-04 12:24:32,038 | INFO | SQL demandé : SELECT e.nom, f.annee, f.chiffre_affaires FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom = 'TechNova Solutions' ORDER BY f.annee
+2026-09-04 12:24:32,039 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 12:24:32,039 | INFO | SQL demandé : DROP TABLE finances
+2026-09-04 12:24:32,039 | WARNING | SQL refusé (non-SELECT) : DROP TABLE finances
+2026-09-04 12:24:32,039 | INFO | SQL demandé : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 12:24:32,039 | WARNING | SQL refusé (non-SELECT) : INSERT INTO entreprises VALUES (9, 'Pirate', 'Hacking')
+2026-09-04 12:24:32,040 | INFO | SQL demandé : SELECT * FROM table_inexistante
+2026-09-04 12:24:32,040 | ERROR | SQL en échec : SELECT * FROM table_inexistante LIMIT 50 | no such table: table_inexistante
+2026-09-04 12:24:32,040 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 12:24:32,040 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 12:24:32,041 | INFO | SQL demandé : SELECT * FROM finances
+2026-09-04 12:24:32,041 | INFO | SQL OK : 20 ligne(s) renvoyée(s)
+2026-09-04 12:24:32,041 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 12:24:32,041 | INFO | Calcul marge nette : CA=105.4, RN=4.8
+2026-09-04 12:24:32,042 | INFO | Calcul marge nette : CA=0.0, RN=5.0
+2026-09-04 12:24:32,042 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 12:24:32,042 | INFO | Calcul variation : 245.8 -> 168.9
+2026-09-04 12:24:32,042 | INFO | Recherche web : TechNova Solutions entreprise
+2026-09-04 12:24:32,235 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20entreprise 200
+2026-09-04 12:24:32,423 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+entreprise&limit=1 200
+2026-09-04 12:24:32,687 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+entreprise&source=web 429
+2026-09-04 12:24:32,838 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 12:24:37,843 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+entreprise) > operation timed out'))
+2026-09-04 12:24:38,345 | INFO | response: https://search.yahoo.com/search;_ylt=WvILm2ARDANS5vgSaHVqXw7I;_ylu=AS_QLHiw4ZNhmxfwMbdKxcJcbiX2XV43r1RmLt-QxXMHhWA?p=TechNova+Solutions+entreprise 200
+2026-09-04 12:24:38,383 | INFO | response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DTechNova%2BSolutions%2Bentreprise%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgQvOfJ3GIXx6tQGIjAKLXyA06w0RjK6psyXZB9CRvpaG37Am3aUbu6lgCOn1wXoTEETevSp3C-xXoxPYBgyAnJSWgFD 429
+2026-09-04 12:24:38,666 | INFO | Recherche web OK : 5 résultat(s)
+2026-09-04 12:24:38,667 | INFO | Graphe CA demandé pour : BioSanté
+2026-09-04 12:24:39,706 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 12:24:39,707 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 12:24:39,826 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 12:24:39,827 | INFO | Graphe CA demandé pour : EntrepriseFantome
+2026-09-04 12:24:42,508 | INFO | SQL demandé : SELECT f.annee, f.chiffre_affaires, f.resultat_net, f.dettes_totales, f.effectif FROM finances f JOIN entreprises e ON e.id = f.entreprise_id WHERE e.nom LIKE '%TechNova%' ORDER BY f.annee
+2026-09-04 12:24:42,509 | INFO | SQL OK : 4 ligne(s) renvoyée(s)
+2026-09-04 12:24:42,512 | INFO | Calcul marge nette : CA=92.8, RN=11.2
+2026-09-04 12:24:42,515 | INFO | Calcul variation : 45.2 -> 92.8
+2026-09-04 12:24:42,517 | INFO | Graphe CA demandé pour : TechNova Solutions
+2026-09-04 12:24:43,587 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 12:24:43,587 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-04 12:24:43,705 | INFO | Graphe généré : /home/z/my-project/download/tp_agent_analyste/rapport/graphe_ca.png
+2026-09-04 12:24:43,709 | INFO | Recherche web : TechNova Solutions actualité
+2026-09-04 12:24:44,072 | INFO | response: https://grokipedia.com/api/typeahead?query=TechNova+Solutions+actualit%C3%A9&limit=1 200
+2026-09-04 12:24:44,222 | INFO | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechNova%20Solutions%20actualit%C3%A9 200
+2026-09-04 12:24:49,224 | INFO | Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+actualit%C3%A9) > operation timed out'))
+2026-09-04 12:24:49,473 | INFO | response: https://search.brave.com/search?q=TechNova+Solutions+actualit%C3%A9&source=web 429
+2026-09-04 12:24:49,888 | INFO | response: https://www.startpage.com/ 200
+2026-09-04 12:24:50,138 | INFO | response: https://www.startpage.com/sp/search 200
+2026-09-04 12:24:50,311 | INFO | response: https://search.yahoo.com/search;_ylt=ZYY4P7y5j7yo8mxXy-eXMhdB;_ylu=z9BvEcjeYHa_gtIy7zxAOvloWnwxSXRdZAwn8V1g0MtuV8c?p=TechNova+Solutions+actualit%C3%A9 200
+2026-09-04 12:24:52,052 | INFO | response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DTechNova%2BSolutions%2Bactualit%25C3%25A9%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS&hl=en-US&q=EgQI1AqfGJPx6tQGIjC_cKfyL8dI5AG1K9ZbL1B1MXDapbqd93FcisRKUvOC_bVD8mfzC5EYY8VMU8l59cAyAnJSWgFD 429
+2026-09-04 12:24:52,188 | INFO | response: https://html.duckduckgo.com/html/ 202
+2026-09-04 12:24:52,198 | ERROR | Recherche web en échec : error sending request for url (https://www.mojeek.com/search?q=TechNova+Solutions+actualit%C3%A9) > operation timed out
+2026-09-04 12:24:52,215 | INFO | SQL demandé : SELECT 1
+2026-09-04 12:24:52,215 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 12:24:52,218 | INFO | SQL demandé : SELECT 1
+2026-09-04 12:24:52,218 | INFO | SQL OK : 1 ligne(s) renvoyée(s)
+2026-09-04 12:24:52,221 | INFO | SQL demandé : SELECT 1
+2026-09-04 12:24:52,221 | INFO | SQL OK : 1 ligne(s) renvoyée(s)

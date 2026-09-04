@@ -1,0 +1,10 @@
+# Fichiers sensibles — JAMAIS committer
+.env
+
+# Cache Python
+__pycache__/
+*.pyc
+.venv/
+
+# Artifacts de test régénérables
+rapport/test_*.pdf

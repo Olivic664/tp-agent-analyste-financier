@@ -1,0 +1,11 @@
+# TP Agent Analyste — Dépendances (Semaine 20)
+# Installation : pip install -r requirements.txt
+
+langgraph>=1.0          # le framework du TP : graphe d'états + boucle agentique
+langchain>=1.0          # socle LangChain (messages, outils)
+langchain-openai>=1.0   # ChatOpenAI : le "cerveau" (GPT-4o ou compatible)
+langchain-core>=1.0     # décorateur @tool et types de messages
+ddgs>=9.0               # recherche web DuckDuckGo (outil recherche_web)
+matplotlib>=3.8         # graphique d'évolution du CA (bonus Niveau 1)
+reportlab>=4.0          # export PDF du rapport (bonus Niveau 3)
+python-dotenv>=1.0      # chargement de la clé API depuis le fichier .env

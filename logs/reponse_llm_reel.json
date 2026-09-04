@@ -1,0 +1,22 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Plan d'action :\n\n1. requete_sql(\"SELECT * FROM finances WHERE entreprise = 'TechNova Solutions' ORDER BY année\")\n2. calcul_ratio(chiffre_affaires, resultat_net) pour chaque année disponible\n3. calcul_variation entre années pour les indicateurs clés\n4. recherche_web(\"TechNova Solutions actualité récente\")\n5. graphe_ca(\"TechNova Solutions\")\n\nSections du rapport final :\n- Résumé exécutif\n- Chiffres clés\n- Analyse\n- Risques\n- Sources",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788521178,
+  "id": "202609041926166588eb67b23b40f3",
+  "model": "glm-4-plus",
+  "object": "chat.completion",
+  "request_id": "202609041926166588eb67b23b40f3",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 504,
+    "total_tokens": 615
+  }
+}
